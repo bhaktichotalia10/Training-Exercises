@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Student Info Form</title>
+	</head>
+	<body style="background-color:skyblue">
+		<h1>Candidate Information</h1>
+		<table border="1">
+			<form method="post" action="abc.html" name="form1">
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" size="15" pattern=[A-Za-z]></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" size="15"></td>
+				</tr>
+				<tr>
+					<td>Phone Number:</td>
+					<td><input type="text" size="10" pattern=[0-9]></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="gender" value="male">Male
+					<input type="radio" name="gender" value="female">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Date of Birth:</td>
+					<td><input type="date" name="dob"></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="emailaddress"></td>
+				</tr>
+				<tr>
+					<td>Highest Qualification:</td>
+					<td>
+						<select name="highest qualifiaction">
+							<option value="select highest qualification" selected>select highest qualification</option>
+							<option value="BTech">BTech</option>
+							<option value="MTech">MTech</option>
+							<option value="MBA">MBA</option>
+							<option value="MCA">MCA</option>
+							<option value="MSc">MSc</option>
+							<option value="MA">MA</option>
+							<option value="BSc">BSc</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Courses Interested In:</td>
+					<td>
+						<input type="checkbox" name="courses" value="Java">Java
+						<input type="checkbox" name="courses" value="HTML5">HTML 5
+						<input type="checkbox" name="courses" value="CSS3">CSS 3
+						<input type="checkbox" name="courses" value="AngularJS">Angular JS
+						<input type="checkbox" name="courses" value="JQuery">JQuery
+					</td>
+				</tr>
+				<tr>
+					<td>Comments: (Mention External Certifications if any)</td>
+					<td><textarea name="certifications" rows="5" cols="50"></textarea></td>
+				</tr>
+				<tr>
+					<td>Upload Degree/External Certificates:</td>
+					<td><input type="file" name="file1"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="Submit Information">
+					<input type="reset" name="clear" value="Clear">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
